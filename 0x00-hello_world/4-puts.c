@@ -1,6 +1,6 @@
 #include <stdio.h>
 /*
- * main function to print on the screen using puts
+ * main - function to print on the screen using puts
  * return 0
  */
 int main(void)
