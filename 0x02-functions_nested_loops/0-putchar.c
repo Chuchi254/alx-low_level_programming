@@ -1,9 +1,7 @@
 #include <stdio.h>
-/**
- * main - program that prints _putchar
- * Return: 0 on success
- */
-int main(void)
+#include "main.h"
+
+void my_putchar(void)/*prints _putchar*/
 {
 	printf("_putchar\n");
 	return (0);
