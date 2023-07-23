@@ -7,13 +7,13 @@
 
 int main(void)
 {
-	char number = '0';
+	int number = 48;
 
-	while (number <= '9')
+	while (number <= 57)
 	{
 		putchar(number);
 		number++;
-		if (number > '9')
+		if (number > 57)
 		{
 			break;
 		}
