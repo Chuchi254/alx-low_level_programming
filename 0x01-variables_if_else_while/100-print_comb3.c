@@ -18,6 +18,10 @@ int main(void)
 			{
 				continue;
 			}
+			if (firstDigit > lastDigit)
+			{
+				continue;
+			}
 			putchar(firstDigit);
 			putchar(lastDigit);
 			if (firstDigit == 56 && lastDigit == 57)
