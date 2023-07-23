@@ -20,14 +20,15 @@ int main(void)
 			}
 			putchar(firstDigit);
 			putchar(lastDigit);
-			if (firstDigit == 8 && lastDigit == 9)
+			if (firstDigit == 56 && lastDigit == 57)
 			{
 				break;
 			}
-			putchar(',');
+			putchar(',');	
 			putchar(' ');
+		
 		}
-		putchar('\n');
 	}
+	putchar('\n');
 	return (0);
 }
