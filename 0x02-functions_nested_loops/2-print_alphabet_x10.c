@@ -1,25 +1,18 @@
 #include "main.h"
 /**
- * print_alphabet_x10 times the alphabet in lowercase
+ * print_alphabet_x10 - times the alphabet in lowercase
  * followed by a new line
  */
 void print_alphabet_x10(void)
 {
-	char ch;
-	int i;
+	int i, j;
 
-	i=0;
-
-	while (1<10)
+	for (i = 0; i < 10; i++)
 	{
-		ch = 'a';
-		while(ch<='z')
+		for (j = 'a'; j <= 'z'; j++)
 		{
-			_putchar(ch);
-			ch++;
+			_putchar(j);
 		}
 		_putchar('\n');
-		i++;
 	}
 }
-
