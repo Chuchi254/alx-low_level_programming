@@ -11,8 +11,7 @@ void print_line(int n)
 {
         if (n <= 0)
         {
-                _putchar('$');
-                _putchar('\n');
+		_putchar('\n');
         }
         else
         {
@@ -20,9 +19,8 @@ void print_line(int n)
 
                 for (count = 0; count < n; count++)
                 {
-                        _putchar('_');
-                }
-                _putchar('$');
+			_putchar('_');
+                } 
                 _putchar('\n');
         }
 }
