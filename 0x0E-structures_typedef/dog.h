@@ -1,15 +1,15 @@
 #ifndef DOG_H
 #define DOG_H
 
+#include <stdio.h>
+#include <stdlib.h>
+
 /**
  * struct dog - a dog's basic information
  * @name: name of the dog
  * @age: age of the dog
  * @owner: owner's name
  */
-
-#include <stdio.h>
-#include <stdlib.h>
 
 struct dog
 {
