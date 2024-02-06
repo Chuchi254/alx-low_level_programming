@@ -21,7 +21,7 @@ int main(int argc, char **argv)
 			if (num == 0)
 			{
 				printf("Error\n");
-				exit(EXIT_FAILURE);
+				return (1);
 			}
 			else
 				sum = sum + num;
