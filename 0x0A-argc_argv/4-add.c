@@ -1,5 +1,7 @@
 #include <stdio.h>
+#include <ctype.h>
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * main - prints the sum of integer arguments
@@ -10,21 +12,38 @@
  */
 int main(int argc, char **argv)
 {
-	if (argc > 0)
+	int i, j, sum = 0;
+	char *str;
+
+	if (argc == 1)
 	{
-		int i, sum = 0;
-
-		for (i = 1; i < argc; i++)
+		printf("%d\n", sum);
+		return (0);
+	}
+	if (argc >= 2)
+	{
+		for (i  = 1; i < argc; i++)
 		{
-			int num = atoi(argv[i]);
+			str = malloc(sizeof(argv[i]));
+				if (str == NULL)
+				{
+					printf("Error\n");
+					free(str);
+					return (1);
+				}
+			strcpy(str, argv[i]);
 
-			if (num == 0)
+			for (j = 0; str[j] != '\0'; j++)
 			{
-				printf("Error\n");
-				return (1);
+				str[j] = argv[i][j];
+				if (!isdigit(str[j]))
+				{
+					printf("Error\n");
+					exit(EXIT_FAILURE);
+				}
 			}
-			else
-				sum = sum + num;
+			sum += atoi(argv[i]);
+			free(str);
 		}
 		printf("%d\n", sum);
 	}
