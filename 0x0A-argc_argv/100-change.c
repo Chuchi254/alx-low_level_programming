@@ -12,19 +12,20 @@
 
 int main(int argc, char **argv)
 {
+	int num;
 	int arr[] = {25, 10, 5, 2, 1};
-	int num = atoi(argv[1]);
 	int i, count = 0;
 
-	if (argc < 2 || argc > 2)
+	if (argc != 2)
 	{
 		printf("Error\n");
 		exit(EXIT_FAILURE);
 	}
+	num = atoi(argv[1]);
 	if (num < 0)
 	{
 		num = 0;
-		printf("%d", num);
+		printf("%d\n", num);
 		exit(EXIT_SUCCESS);
 	}
 
