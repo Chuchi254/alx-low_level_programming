@@ -138,17 +138,26 @@ int main(int argc, char **argv)
 	int i;
 
 	if (argc != 3)
+	{
+		puts('Error');
 		return (98);
+	}
 
 	num1 = argv[1];
 	num2 = argv[2];
 
 	if (!is_digit(num1) || !is_digit(num2))
+	{
+		puts('Error');
 		return (98);
+	}
 
 	result = multiply(num1, num2);
 	if (result == NULL)
+	{
+		puts('Error');
 		return (98);
+	}
 
 	for (i = 0; result[i] != '\0'; i++)
 		putchar(result[i]);
