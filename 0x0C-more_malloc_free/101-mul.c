@@ -152,7 +152,7 @@ int main(int argc, char **argv)
 
 	for (i = 0; result[i] != '\0'; i++)
 		putchar(result[i]);
-	_putchar('\n');
+	putchar('\n');
 
 	free(result);
 	return (0);
