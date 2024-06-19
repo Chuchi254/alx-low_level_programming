@@ -139,7 +139,7 @@ int main(int argc, char **argv)
 
 	if (argc != 3)
 	{
-		puts('Error');
+		puts("Error");
 		return (98);
 	}
 
@@ -148,14 +148,14 @@ int main(int argc, char **argv)
 
 	if (!is_digit(num1) || !is_digit(num2))
 	{
-		puts('Error');
+		puts("Error");
 		return (98);
 	}
 
 	result = multiply(num1, num2);
 	if (result == NULL)
 	{
-		puts('Error');
+		puts("Error");
 		return (98);
 	}
 
