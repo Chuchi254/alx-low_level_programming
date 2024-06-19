@@ -1,5 +1,5 @@
-#include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 #include <ctype.h>
 
 /**
@@ -151,7 +151,7 @@ int main(int argc, char **argv)
 		return (98);
 
 	for (i = 0; result[i] != '\0'; i++)
-		_putchar(result[i]);
+		putchar(result[i]);
 	_putchar('\n');
 
 	free(result);
