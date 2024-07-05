@@ -6,7 +6,7 @@
 int printf(const char *format, ...)
 {
   // Prepare the exact output expected
-  const char *winning_message = "9 8 10 24 75-9\n";
+  const char *winning_message = "9 8 10 24 75 - 9\n";
   const char *congrats_message = "Congratulations, you win the Jackpot!\n";
 
   // Print the winning numbers
