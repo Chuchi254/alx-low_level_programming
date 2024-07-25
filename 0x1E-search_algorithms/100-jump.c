@@ -16,6 +16,17 @@ size_t min(size_t a, size_t b)
 }
 
 /**
+ * print_array - prints the array being searched between two indices
+ * @array: pointer to the first element of the array
+ * @left: left index
+ * @right: right index
+ */
+void print_array(int *array, size_t left, size_t right)
+{
+	printf("Value found between indexes [%lu] and [%lu]\n", left, right);
+}
+
+/**
  * jump_search - searches for a value in a sorted array of integer using
  * jump search
  * @array: pointer to the first element of the array to search in
@@ -44,8 +55,7 @@ int jump_search(int *array, size_t size, int value)
 			return (-1);
 	}
 
-	printf("Value found between indexes [%lu] and [%lu]\n",
-			prev, min(step, size));
+	print_array(array,prev, min(step, size) - 1);
 
 	for (i = prev; i < min(step, size); i++)
 	{
